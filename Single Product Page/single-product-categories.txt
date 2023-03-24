@@ -1,0 +1,6 @@
+.posted_in a {
+  color:#777;
+}
+.posted_in a:hover{
+  color:#dc8732;
+}

@@ -1,0 +1,3 @@
+.single.single-product .woocommerce-product-gallery__image a img {
+    max-height: 800px;
+}
