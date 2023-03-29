@@ -1,0 +1,15 @@
+add_filter( 'gettext', function ( $strings ) {
+    /**
+     * Holding translations/changes.
+     * 'to translate' => 'the translation or rewording'
+     */
+    $text = array(
+        'SHOPPING CART' => 'ΚΑΛΑΘΙ ΑΓΟΡΑΣ',
+        'CHECKOUT DETAILS'   => 'ΤΑΜΕΙΟ',
+        'ORDER COMPLETE'   => 'ΟΛΟΚΛΗΡΩΣΗ',
+    );
+
+    $strings = str_ireplace( array_keys( $text ), $text, $strings );
+
+    return $strings;
+}, 20 );
